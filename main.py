@@ -14,11 +14,26 @@ if answer == "left":
     else:
          print("Not a valid option. you lose.")
                 
-
 elif answer == "right":
-    print()
+    answer = input("you come to a bridge, it looks wobbly, do you want to cross it or head back (cross/back)? ")
     
+    if answer == "back":
+        print("you go back and lose ")
+    elif answer == "cross":
+        answer = input("you cross the bridge and meet a stranger, do you talk to them (yes/no)? ")
+        
+        if answer == "yes":
+            print("you talk to the stranger and they give you gold. YOU WIN!")
+        elif answer == "no":
+            print("you ingore the stranger and they are offended and lose ")
+        else:
+            print("Not a valid option. you lose.")
 else:
-    print("Not a valid option. you lose.")    
+    print("Not a valid option. you lose.")
+    
+print("Thank you for trying", name)    
+    
+    
+ 
         
     
